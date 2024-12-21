@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Example</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome</h1>
+        <p id="message">Hello Vistor</p>
+        <button onclick="changeText()">Click Me</button>
+    </div>
+    <script>
+        function changeText(){
+            let element=document.getElementById("message");
+            element.innerHTML="Welcome to JavaScript";
+            element.style.fontSize="24px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using innerHTML</title>
+</head>
+<body>
+    <h1>Welcome Message</h1>
+    <p id="greeting"></p> 
+    <script>
+        document.getElementById("greeting").innerHTML="Welcome" + (10+5);
+        // text and calculation (Welcome 15) will be added in the <P id="message"> 
+    </script>
+</body>
+</html>
