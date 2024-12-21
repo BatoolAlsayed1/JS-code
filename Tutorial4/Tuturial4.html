@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List Manager</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        #shopping-list li {
+            list-style-type: none;
+        }
+    </style>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Shopping List Manager - DOM & Events Tutorial</h1>
+
+        <article>
+            <h2>1. Load Event Example</h2>
+            <p>The page loads with a welcome message and loads saved items from localStorage.</p>
+            <select id="theme-selector">
+                <option value="light">Light Theme</option>
+                <option value="dark">Dark Theme</option>
+            </select>
+        </article>
+
+        <article>
+            <h2>2. Click & Submit Events Example</h2>
+            <p>Add items to your shopping list:</p>
+            <form id="add-item-form">
+                <div class="grid">
+                    <input type="text" id="item-input" placeholder="Enter item name" required>
+                    <button type="submit">Add Item</button>
+                </div>
+            </form>
+        </article>
+
+        <article>
+            <h2>3. Change & Click Events Example</h2>
+            <p>Your shopping list (click items to mark as complete):</p>
+            <div class="grid">
+                <div>
+                    <select id="filter-select">
+                        <option value="all">All Items</option>
+                        <option value="active">Active</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <button id="clear-completed" class="contrast">Clear Completed</button>
+            </div>
+            <ul id="shopping-list" role="list"></ul>
+        </article>
+    </main>
+</body>
+
+</html>
